@@ -1,0 +1,49 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif}
+
+body{background:#0f172a;color:#e6eef8;overflow-x:hidden;scroll-behavior:smooth}
+
+a{text-decoration:none}
+
+header{padding:20px 40px;background:#071033;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100;box-shadow:0 4px 10px rgba(0,0,0,0.2)}
+
+header h1{color:#ffd24d;font-size:24px;animation:fadeInDown 1s ease forwards}
+
+nav a{margin-left:20px;color:#e6eef8;font-weight:600;transition:0.3s}
+
+nav a:hover{color:#ffd24d}
+
+.hero{height:90vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;background:url('https://i.postimg.cc/gj8hBV8Y/render1-jpg-1921468.jpg') center/cover no-repeat,linear-gradient(180deg,#0f172a,#071033);animation:fadeIn 1.5s ease forwards;position:relative;overflow:hidden}
+
+.hero::after{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.25);pointer-events:none}
+
+.hero h2{font-size:36px;color:#ffd24d;margin-bottom:16px;animation:slideInUp 1s ease forwards;text-shadow:2px 2px 6px rgba(0,0,0,0.6)}
+
+.hero p{font-size:18px;color:#cfe6ff;max-width:600px;animation:slideInUp 1s 0.3s ease forwards;text-shadow:1px 1px 4px rgba(0,0,0,0.5)}
+
+.hero button{margin-top:20px;padding:12px 20px;border-radius:10px;border:none;background:#ffd24d;color:#071033;font-weight:700;cursor:pointer;transition:0.3s;animation:slideInUp 1s 0.6s ease forwards}
+
+.hero button:hover{background:#e6c02a;transform:scale(1.05)}
+
+section{padding:80px 20px;text-align:center}
+
+section h3{color:#ffd24d;font-size:28px;margin-bottom:20px}
+
+section p{max-width:800px;margin:0 auto 30px;color:#cfe6ff;line-height:1.6}
+
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;list-style:none;padding:0;margin:0}
+
+.features li{background:rgba(255,255,255,0.05);padding:16px;border-radius:12px;transition:0.3s;position:relative;animation:fadeInUp 1s ease forwards}
+
+.features li:hover{transform:translateY(-6px) scale(1.03);background:rgba(255,210,77,0.1)}
+
+footer{padding:30px 20px;background:#071033;text-align:center;color:#a0b9d6;font-size:14px}
+
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+
+@keyframes slideInUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+
+@keyframes fadeInDown{from{opacity:0;transform:translateY(-20px)}to{opacity:1;transform:translateY(0)}}
+
+@keyframes fadeInUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+
+@media(max-width:768px){.hero h2{font-size:28px}.hero p{font-size:16px}}
